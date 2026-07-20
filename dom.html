@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice Project</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:40px;
+            background:#f2f2f2;
+        }
+
+        h1{
+            color:blue;
+        }
+
+        input{
+            padding:10px;
+            width:250px;
+        }
+
+        button{
+            padding:10px;
+            margin:5px;
+            cursor:pointer;
+        }
+
+        li{
+            width:350px;
+            margin:10px auto;
+            background:rgb(15, 134, 110);
+            padding:10px;
+            display:flex;
+            justify-content:space-between;
+            border-radius:5px;
+        }
+
+        .delete{
+            background:red;
+            color:rgb(159, 85, 198);
+            border:none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1 id="title">DOM To-Do List</h1>
+
+<input
+type="text"
+id="task"
+placeholder="Enter Task">
+
+<br><br>
+
+<button onclick="addTask()">Add Task</button>
+
+<button onclick="changeTitle()">Change Title</button>
+
+<button onclick="highlightTasks()">Highlight Tasks</button>
+
+<button onclick="clearAll()">Clear All</button>
+
+<h3 id="count">Total Tasks : 0</h3>
+
+<ul id="list">
+
+</ul>
+
+<script src="dom.js"></script>
+
+</body>
+</html>
