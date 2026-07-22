@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <input type="text" onkeydown="keyDown()" onkeyup="keyUp()" onkeypress="showKey(event)" placeholder="Type here">
+        <p id="message"></p>
+        <script>
+        function keyDown(){
+           document.getElementById("message").innerHTML="Key is Down";
+        }
+        function keyUp(){
+            document.getElementById("message").innerHTML="Key is Up";
+        }
+        function showKey(event){
+          document.getElementById("message").innerHTML= "You Pressed : "+event.key;
+        }
+    </script>
+    </head>
+</html>
